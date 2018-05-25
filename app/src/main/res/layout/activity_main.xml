@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner_layout">
+
+
+        <!--<include layout="@layout/layout_top_navigation_back"/>-->
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile"/>
+        <TextView
+            android:id="@+id/aboutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="30sp"
+            android:text="About Me"
+            android:layout_marginLeft="5dp"
+
+            android:textColor="@color/textColor" />
+        <EditText
+            android:id="@+id/aboutMeDT"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textSize="20sp"
+            android:hint="write something about you..."
+            android:layout_weight="1"
+
+            android:textColor="@color/textColor"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/MyInterest"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="30sp"
+            android:text="My Interests"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/textColor"
+            android:background="@color/light_grey"/>
+        <EditText
+            android:id="@+id/MyInterestDT"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="@color/textColor"
+            android:background="@color/white"/>
+
+
+
+        <TextView
+            android:id="@+id/Sex"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="30sp"
+            android:text="I AM"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/textColor"
+            android:background="@color/light_grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:textSize="30sp"
+                android:text="woman"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="5dp"/>
+
+            <ImageButton
+                android:id="@+id/checkInfoBeforeMatched"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_info"
+                android:background="@color/white"
+                android:layout_marginRight="5dp"
+                android:onClick="showDialog"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="30sp"
+            android:text="My phone number"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/textColor"
+            android:background="@color/light_grey"/>
+        <EditText
+            android:id="@+id/PhoneDT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+
+            android:layout_weight="1"
+            android:textColor="@color/textColor"
+            android:background="@color/white"/>
+
+
+        <Button
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOG OUT"
+            android:layout_gravity="center"
+            android:background="@color/light_grey"/>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
+
+
